@@ -13,7 +13,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#openib removed
 
-
-# Install GlusterFS and its dependencies
-yum -y install openssh-server wget fuse fuse-libs openib libibverbs http://download.gluster.org/pub/gluster/glusterfs/LATEST/CentOS/glusterfs-3.3.0-1.el6.x86_64.rpm http://download.gluster.org/pub/gluster/glusterfs/LATEST/CentOS/glusterfs-fuse-3.3.0-1.el6.x86_64.rpm http://download.gluster.org/pub/gluster/glusterfs/LATEST/CentOS/glusterfs-server-3.3.0-1.el6.x86_64.rpm
+wget http://download.gluster.org/pub/gluster/glusterfs/LATEST/CentOS/glusterfs-epel.repo
+mv ./glusterfs-epel.repo /etc/yum.repos.d/glusterfs-epel.repo
+yum --enablerepo=glusterfs-epel install glusterfs glusterfs-fuse glusterfs-server openssh-server wget fuse fuse-libs libibverbs 
