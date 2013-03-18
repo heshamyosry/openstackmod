@@ -25,5 +25,5 @@ then
     exit 1
 fi
 
-nmap -sT -PN -T5 -p22 192.168.0.0/24 > /dev/null 2>&1
+nmap -sT -PN -T5 -p22 10.202.11.0/24 > /dev/null 2>&1
 ip neighbour | grep `virsh dumpxml $1 | grep "mac address" | cut -d \' -f2` |cut -d ' ' -f1
