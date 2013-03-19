@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # MySQL root password
-export MYSQL_ROOT_PASSWORD=mysqlrootpassword
+export MYSQL_ROOT_PASSWORD=ASDll0060
 
 # The OpenStack admin user account
 export OS_USERNAME=admin
@@ -35,7 +35,7 @@ export NOVA_SERVICE_USERNAME=nova
 export NOVA_SERVICE_PASSWORD=novapassword
 
 # Public IP address of the network gateway
-export PUBLIC_IP_ADDRESS=128.250.26.161
+export PUBLIC_IP_ADDRESS=10.101.11.188
 
 # IP address of the metadata host (in our setup the metadata service
 # is running on the controller)
