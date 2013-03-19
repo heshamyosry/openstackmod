@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #openib removed
-
+yum install wget fuse fuse-libs libibverbs openssh-server -y
 wget http://download.gluster.org/pub/gluster/glusterfs/LATEST/CentOS/glusterfs-epel.repo
 mv ./glusterfs-epel.repo /etc/yum.repos.d/glusterfs-epel.repo
-yum --enablerepo=glusterfs-epel install glusterfs glusterfs-fuse glusterfs-server openssh-server wget fuse fuse-libs libibverbs 
+yum --enablerepo=glusterfs-epel install glusterfs glusterfs-fuse glusterfs-server 
